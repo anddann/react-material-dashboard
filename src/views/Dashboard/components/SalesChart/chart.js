@@ -27,7 +27,7 @@ export const options = {
   cornerRadius: 20,
   tooltips: {
     enabled: true,
-    mode: 'index',
+    mode: 'index.jsx',
     intersect: false,
     borderWidth: 1,
     borderColor: palette.border,

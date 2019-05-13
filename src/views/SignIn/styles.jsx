@@ -91,6 +91,13 @@ export default theme => ({
     marginTop: theme.spacing.unit * 2,
     width: '100%'
   },
+  githubButton: {
+    marginTop: theme.spacing.unit * 3,
+    width: '100%'
+  },
+  githubIcon: {
+    marginRight: theme.spacing.unit
+  },
   googleIcon: {
     marginRight: theme.spacing.unit
   },

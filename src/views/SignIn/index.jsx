@@ -24,13 +24,16 @@ import {
 import { ArrowBack as ArrowBackIcon } from '@material-ui/icons';
 
 // Shared components
-import { Facebook as FacebookIcon, Google as GoogleIcon } from 'icons';
+import { Facebook as FacebookIcon, Google as GoogleIcon, GitHub as GithubIcon} from 'icons';
 
 // Component styles
 import styles from './styles';
 
 // Form validation schema
 import schema from './schema';
+
+import { GOOGLE_AUTH_URL, FACEBOOK_AUTH_URL, GITHUB_AUTH_URL } from '../../constants';
+
 
 // Service methods
 const signIn = () => {
@@ -199,13 +202,13 @@ class SignIn extends Component {
                     Login with Facebook
                   </Button>
                   <Button
-                    className={classes.googleButton}
-                    onClick={this.handleSignIn}
+                    className={classes.githubButton}
                     size="large"
                     variant="contained"
+                    href={GITHUB_AUTH_URL}
                   >
-                    <GoogleIcon className={classes.googleIcon} />
-                    Login with Google
+                    <GithubIcon className={classes.githubIcon} />
+                    Login with GitHub
                   </Button>
                   <Typography
                     className={classes.sugestion}
