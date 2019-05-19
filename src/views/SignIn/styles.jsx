@@ -17,18 +17,20 @@ export default theme => ({
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundImage: 'url(/images/sign_up_1.jpg)',
+    backgroundImage: 'url(/images/sign_up_2.jpg)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center'
   },
   quoteInner: {
     textAlign: 'center',
-    flexBasis: '600px'
-  },
+    flexBasis: '500px',
+    position: 'absolute',
+    bottom: 100
+},
   quoteText: {
     color: theme.palette.common.white,
-    fontWeight: 300
+    fontWeight: 500
   },
   name: {
     marginTop: theme.spacing.unit * 3,

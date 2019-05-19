@@ -35,11 +35,17 @@ const styles = theme => ({
 });
 
 class Dashboard extends Component {
+
+  constructor(props) {
+    super(props);
+    console.log(props);
+  }
+
   render() {
     const { classes } = this.props;
 
     return (
-      <DashboardLayout title="Dashboard">
+      <DashboardLayout title="Dashboard"  currentUser={this.props.currentUser} onLogout={this.props.onLogout}>
         <div className={classes.root}>
           <Grid
             container

@@ -39,9 +39,9 @@ const states = [
 
 class Account extends Component {
   state = {
-    firstName: 'John',
-    lastName: 'Doe',
-    email: 'contact@devias.io',
+    firstName: this.props.currentUser.name,
+    lastName:  this.props.currentUser.name,
+    email:  this.props.currentUser.email,
     phone: '',
     state: 'Alabama',
     country: 'USA'

@@ -29,7 +29,7 @@ class Account extends Component {
     const { classes } = this.props;
 
     return (
-      <DashboardLayout title="Account">
+      <DashboardLayout currentUser={this.props.currentUser} title="Account">
         <div className={classes.root}>
           <Grid
             container
@@ -42,7 +42,7 @@ class Account extends Component {
               xl={4}
               xs={12}
             >
-              <AccountProfile />
+              <AccountProfile currentUser={this.props.currentUser} />
             </Grid>
             <Grid
               item
@@ -51,7 +51,7 @@ class Account extends Component {
               xl={8}
               xs={12}
             >
-              <AccountDetails />
+              <AccountDetails currentUser={this.props.currentUser} />
             </Grid>
           </Grid>
         </div>

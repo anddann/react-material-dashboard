@@ -162,8 +162,7 @@ class SignUp extends Component {
                   className={classes.quoteText}
                   variant="h1"
                 >
-                  Hella narwhal Cosby sweater McSweeney's, salvia kitsch before
-                  they sold out High Life.
+                  CodeShield the best Solution for Everyone!
                 </Typography>
                 <div className={classes.person}>
                   <Typography
